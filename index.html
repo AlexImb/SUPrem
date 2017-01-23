@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
 		<title>Suprem-Scroll Up Premium Template</title>
 		<!-- CSS-uri -->
 		<link rel="stylesheet" type='text/css' href="css/html5reset-1.6.1.css" />
@@ -13,13 +14,21 @@
 
 		<!-- Librarii standard -->
 
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+		<!-- Incarca de pe server-ul google in caz de eroara incarca din folder-ul local -->
+		<script>
+		!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.1.min.js"%3E%3C/script%3E'))
+		</script>
+
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
 		<!-- Preloader -->
-
-		<!-- Configurare--> <script type="text/javascript" src="js/preloader.js"></script>
 		<!-- Plug-in    --> <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+		<!-- Configurare <script type="text/javascript" src="js/preloader.js"></script> //integrat in scriptul principal --> 
+
+		<!-- Lazy Load -->
+		<!-- Plug-in    --> <script type="text/javascript" src="js/jquery.lazyload.js"></script>
+		<!-- Configurare <script type="text/javascript" src="js/lazyload.js"></script> //integrat in scriptul principal -->	
 
 		<!-- Parallax si scroll control -->
 
@@ -38,7 +47,7 @@
 		<script type="text/javascript" src="js/jquery_miscare_background.js"></script>
 		<!-- Side-scroll, pane si timeline -->
 
-		<script type="text/javascript" src="js/timeline.js"></script>
+		<!-- <script type="text/javascript" src="js/timeline.js"></script> //integrat in scriptul principal  -->
 
 		<!-- Configurare Navigare, Parallax si Slide-uri -->
 		<script type="text/javascript" src="js/script_principal.js"></script>
@@ -49,12 +58,12 @@
 		<section id="continut">
 			<nav id="ani_nav">
 				<ul id="meniu_ani">
-					<li id="li1945" style="color:#CC0000" ><a>1945</a></li>
-					<li id="li1957" style="color:#E5B500"><a>1957</a></li>
-					<li id="li1966" style="color:#0EA80F"><a>1966</a></li>
-					<li id="li1975" style="color:#CC0000"><a>1975</a></li>
-					<li id="li1977" style="color:#E5B500"><a>1977</a></li>
-					<li id="li1981" style="color:#0EA80F"><a>1981</a></li>
+					<li id="li1945" style="color:#CC0000; border-color:#CC0000" ><a>1945</a></li>
+					<li id="li1957" style="color:#E5B500; border-color:#E5B500"><a>1957</a></li>
+					<li id="li1966" style="color:#0EA80F; border-color:#0EA80F"><a>1966</a></li>
+					<li id="li1975" style="color:#CC0000; border-color:#CC0000"><a>1975</a></li>
+					<li id="li1977" style="color:#E5B500; border-color:#E5B500"><a>1977</a></li>
+					<li id="li1981" style="color:#0EA80F; border-color:#0EA80F"><a>1981</a></li>
 				</ul>
 			</nav>
 			<!-- Slide-uri -->
@@ -65,39 +74,48 @@
 				<section  id="first"  class="slide" data-slide="1" data-speed="18" data-type="background" data-offsetY="0">
 					<article id="imagini_1945" class="panou_imagini" data-type="element" data-offsetY="5" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_01.jpg" alt="bobmarley_1945_st_01" /></li>
-                            <li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_02.jpg" alt="bobmarley_1945_st_02" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_03.jpg" alt="bobmarley_1945_st_03" /></li>
-							<li style="width:448px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_04.jpg" alt="bobmarley_1945_st_04" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_05.jpg" alt="bobmarley_1945_st_05" /></li>
-							<li style="width:436px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_06.jpg" alt="bobmarley_1945_st_06" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_07.jpg" alt="bobmarley_1945_st_07" /></li>
-							<li style="width:270px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_08.jpg" alt="bobmarley_1945_st_08" /></li>
-							<li><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_09.jpg" alt="bobmarley_1945_st_09" /></li>
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_01.jpg" alt="bobmarley_1945_st_01" width="500" height="150" /></li>
+
+                            <li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_02.jpg" alt="bobmarley_1945_st_02" width="518" height="325"/></li>
+
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_03.jpg" alt="bobmarley_1945_st_03" width="494" height="161" /></li>
+
+							<li style="width:448px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_04.jpg"  alt="bobmarley_1945_st_04" width="896" height="215" /></li>
+
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_05.jpg" alt="bobmarley_1945_st_05" width="251"
+							height="201" /></li>
+
+							<li style="width:436px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_06.jpg" alt="bobmarley_1945_st_06" width="872" height="401" /></li>
+
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_st_07.jpg" alt="bobmarley_1945_st_07" width="491" height="139"/></li>
+
+							<li style="width:270px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_08.jpg" alt="bobmarley_1945_st_08" width="540" height="360" /></li>
+
+							<li><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_st_09.jpg" alt="bobmarley_1945_st_09" width="276" height="183" /></li>
 							
 						</ul>
 
 						<ul class="imagini_dreapta">
-							<li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_01.jpg" alt="bobmarley_1945_dr_01" /></li>
-							<li ><img src="img/imagini_slide/1945/bobmarley_1945_dr_02.jpg" alt="bobmarley_1945_dr_02" /></li>
-							<li style="width:375px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_03.jpg" alt="bobmarley_1945_dr_03" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_04.jpg" alt="bobmarley_1945_dr_04" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_05.jpg" alt="bobmarley_1945_dr_05" /></li>
-							<li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_06.jpg" alt="bobmarley_1945_dr_06" /></li>
-							<li style="width:421px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_07.jpg" alt="bobmarley_1945_dr_07" /></li>
-							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_08.jpg" alt="bobmarley_1945_dr_08" /></li>
-                            <li><img src="img/imagini_slide/1945/bobmarley_1945_dr_09.jpg" alt="bobmarley_1945_dr_09" /></li>
+							<li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_01.jpg" alt="bobmarley_1945_dr_01" width="518" height="325" /></li>
+							<li ><img src="img/imagini_slide/1945/bobmarley_1945_dr_02.jpg" alt="bobmarley_1945_dr_02" width="500" height="275" /></li>
+							<li style="width:375px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_03.jpg" alt="bobmarley_1945_dr_03" width="750" height="150" /></li>
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_04.jpg" alt="bobmarley_1945_dr_04"  width="289" height="174"/></li>
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_05.jpg" alt="bobmarley_1945_dr_05" width="494" height="176" /></li>
+							<li style="width:259px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_06.jpg" alt="bobmarley_1945_dr_06" width="518" height="349"/></li>
+							<li style="width:421px;"><img class="imagine_link" src="img/imagini_slide/1945/bobmarley_1945_dr_07.jpg" alt="bobmarley_1945_dr_07" width="842" height="275" /></li>
+							<li><img src="img/imagini_slide/1945/bobmarley_1945_dr_08.jpg" alt="bobmarley_1945_dr_08" width="200" height="153" /></li>
+                            <li><img src="img/imagini_slide/1945/bobmarley_1945_dr_09.jpg" alt="bobmarley_1945_dr_09" width="295" height="166" /></li>
 						</ul>
 					</article>
 					<article id="obiecte_flotante_1945">
 						<div class="logo_suprem" data-type="element" data-offsetY="290" data-speed="2">
-							<img src="img/imagini_slide/1945/obiecte_flotante/bobmarley_1945_obiect_01.png" width="808" height="114" alt="bobmarley_1945_obiect01" />
+							<img src="img/imagini_slide/1945/obiecte_flotante/bobmarley_1945_obiect_01.png" alt="bobmarley_1945_obiect01" />
 						</div>
 					
-						<div class="img_stanga" data-type="element" data-offsetY="390" data-speed="1">
+						<div class="img_stanga_color" data-type="element" data-offsetY="250" data-speed="1.5">
 							<img src="img/imagini_slide/1945/obiecte_flotante/bobmarley_1945_obiect_02.png" alt="bobmarley_1945_obiect02" />
 						</div>
-						<div class="img_dreapta_color" data-type="element" data-offsetY="230" data-speed="1.5">
+						<div class="img_dreapta" data-type="element" data-offsetY="380" data-speed="1">
 							<img src="img/imagini_slide/1945/obiecte_flotante/bobmarley_1945_obiect_03.png" alt="bobmarley_1945_obiect_03"/>
 						</div>
 						<div class="jamaica" data-type="element" data-offsetY="890" data-speed="2.5">
@@ -122,22 +140,22 @@
 				<section id="second" class="slide" data-slide="2" data-speed="5" data-type="background" data-offsetY="360">
                     <article id="imagini_1957" class="panou_imagini" data-type="element" data-offsetY="215" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1957/bobmarley_1957_st_01.jpg" alt="bobmarley_1957_st_01" /></li>
-							<li style="width:419px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_st_02.jpg" alt="bobmarley_1957_st_02"/></li>
-							<li><img src="img/imagini_slide/1957/bobmarley_1957_st_04.jpg" alt="bobmarley_1957_st_04"/></li>
-                            <li style="width:400px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_st_03.jpg" alt="bobmarley_1957_st_03"/></li>
-							<li><img src="img/imagini_slide/1957/bobmarley_1957_st_05.jpg" alt="bobmarley_1957_st_05" /></li>
-                            <li style="width:462px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_st_06.jpg" alt="bobmarley_1957_st_06"/></li>
-                            <li ><img  src="img/imagini_slide/1957/bobmarley_1957_st_07.jpg" alt="bobmarley_1957_st_07"/></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_01.jpg" width="222" height="143" alt="bobmarley_1957_st_01"/></li>
+							<li style="width:419px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_02.jpg" alt="bobmarley_1957_st_02" width="838" height="241"/></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_04.jpg" alt="bobmarley_1957_st_04" width="511" height="158"/></li>
+                            <li style="width:400px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_03.jpg" alt="bobmarley_1957_st_03" width="800" height="250"/></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_05.jpg" alt="bobmarley_1957_st_05" width="350" height="200" /></li>
+                            <li style="width:462px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_06.jpg" alt="bobmarley_1957_st_06" width="924" height="277" /></li>
+                            <li ><img  src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_st_07.jpg" alt="bobmarley_1957_st_07" width="255" height="255" /></li>
 						</ul>
 						<ul class="imagini_dreapta">	
-							<li style="width:300px"><img src="img/imagini_slide/1957/bobmarley_1957_dr_01.jpg" alt="bobmarley_1957_dr_01" /></li>
-							<li><img src="img/imagini_slide/1957/bobmarley_1957_dr_02.jpg" alt="bobmarley_1957_dr_02" /></li>
-							<li style="width:450px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_dr_03.jpg" alt="bobmarley_1957_dr_03" /></li>
-                            <li style="width:194px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_dr_04.jpg" alt="bobmarley_1957_dr_04" /></li>
-                            <li style="width:352px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_dr_05.jpg" alt="bobmarley_1957_dr_05" /></li>
-                            <li style="width:249px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_dr_06.jpg" alt="bobmarley_1957_dr_06" /></li>
-                            <li style="width:408px;"><img class="imagine_link" src="img/imagini_slide/1957/bobmarley_1957_dr_07.jpg" alt="bobmarley_1957_dr_07" /></li>       	        	
+							<li style="width:300px"><img src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_01.jpg" alt="bobmarley_1957_dr_01" width="179" height="92" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_02.jpg" alt="bobmarley_1957_dr_02" width="300" height="157" /></li>
+							<li style="width:450px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_03.jpg" alt="bobmarley_1957_dr_03" width="900" height="250" /></li>
+                            <li style="width:194px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_04.jpg" alt="bobmarley_1957_dr_04" width="388" height="250" /></li>
+                            <li style="width:352px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_05.jpg" alt="bobmarley_1957_dr_05" width="704" height="205" /></li>
+                            <li style="width:249px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_06.jpg" alt="bobmarley_1957_dr_06" width="498" height="234" /></li>
+                            <li style="width:408px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1957/bobmarley_1957_dr_07.jpg" alt="bobmarley_1957_dr_07" width="411" height="285" /></li>       	        	
 						</ul>
 					</article>
 					<article id="obiecte_flotante_1957">
@@ -175,23 +193,23 @@
 				<section id="third" class="slide" data-slide="3" data-speed="6" data-type="background" data-offsetY="410">
                     <article id="imagini_1966" class="panou_imagini" data-type="element" data-offsetY="500" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1966/bobmarley_1966_st_01.jpg" alt="bobmarley_1966_st_01" /></li>
-							<li style="width:402px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_st_02.jpg" alt="bobmarley_1966_st_02" /></li>
-                            <li><img src="img/imagini_slide/1966/bobmarley_1966_st_03.jpg" alt="bobmarley_1966_st_03" /></li>
-                            <li style="width:300px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_st_04.jpg" alt="bobmarley_1966_st_04" /></li>
-                            <li style="width:295px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_st_05.jpg" alt="bobmarley_1966_st_05" /></li>
-                            <li style="width:226px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_st_06.jpg" alt="bobmarley_1966_st_06" /></li>
-                            <li style="width:394px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_st_07.jpg" alt="bobmarley_1966_st_07" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_01.jpg"  alt="bobmarley_1966_st_01" width="235" height="161" /></li>
+							<li style="width:402px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_02.jpg" alt="bobmarley_1966_st_02" width="804" height="325" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_03.jpg" alt="bobmarley_1966_st_03" width="508" height="158" /></li>
+                            <li style="width:300px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_04.jpg" alt="bobmarley_1966_st_04" width="600" height="350" /></li>
+                            <li style="width:295px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_05.jpg" alt="bobmarley_1966_st_05" width="590" height="161" /></li>
+                            <li style="width:226px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_06.jpg" alt="bobmarley_1966_st_06" width="452" height="180" /></li>
+                            <li style="width:394px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_st_07.jpg" alt="bobmarley_1966_st_07" width="788" height="270" /></li>
 						</ul>
 						<ul class="imagini_dreapta">
-							<li><img src="img/imagini_slide/1966/bobmarley_1966_dr_01.jpg" alt="bobmarley_1966_dr_01" /></li>
-							<li style="width:289px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_dr_02.jpg" alt="bobmarley_1966_dr_02" /></li>
-                            <li><img src="img/imagini_slide/1966/bobmarley_1966_dr_03.jpg" alt="bobmarley_1966_dr_03" /></li>
-                            <li style="width:287px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_dr_04.jpg" alt="bobmarley_1966_dr_04" /></li>
-                            <li><img src="img/imagini_slide/1966/bobmarley_1966_dr_05.jpg" alt="bobmarley_1966_dr_05" /></li>
-                            <li style="width:255px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_dr_06.jpg" alt="bobmarley_1966_dr_06" /></li>
-                            <li style="width:387px;"><img class="imagine_link" src="img/imagini_slide/1966/bobmarley_1966_dr_07.jpg" alt="bobmarley_1966_dr_07" /></li>
-                            <li><img src="img/imagini_slide/1966/bobmarley_1966_dr_08.jpg" alt="bobmarley_1966_dr_08" /></li>                            
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_01.jpg" alt="bobmarley_1966_dr_01" width="391" height="187" /></li>
+							<li style="width:289px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_02.jpg" alt="bobmarley_1966_dr_02" width="578" height="260" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_03.jpg" alt="bobmarley_1966_dr_03" width="288" height="180" /></li>
+                            <li style="width:287px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_04.jpg" alt="bobmarley_1966_dr_04" width="574" height="207" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_05.jpg" alt="bobmarley_1966_dr_05" width="210" height="141" /></li>
+                            <li style="width:255px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_06.jpg" alt="bobmarley_1966_dr_06" width="510" height="154" /></li>
+                            <li style="width:387px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_07.jpg" alt="bobmarley_1966_dr_07" width="774" height="241" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1966/bobmarley_1966_dr_08.jpg" alt="bobmarley_1966_dr_08" width="307" height="262" /></li>                            
 						</ul>
 					</article>
 					<article id="obiecte_flotante_1966">
@@ -220,36 +238,36 @@
                 <section id="fourth"  class="slide" data-slide="4" data-speed="8" data-type="background" data-offsetY="380">
 					<article id="imagini_1975" class="panou_imagini" data-type="element" data-offsetY="770" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1975/bobmarley_1975_st_01.jpg" alt="bobmarley_1975_st_01" /></li>
-                            <li style="width:265px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_st_02.jpg" alt="bobmarley_1975_st_02.jpg" /></li>
-                            <li style="width:414px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_st_03.jpg" alt="bobmarley_1975_st_03.jpg" /></li>
-                            <li><img src="img/imagini_slide/1975/bobmarley_1975_st_04.jpg" alt="bobmarley_1975_st_04" /></li>
-                            <li style="width:277px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_st_05.jpg" alt="bobmarley_1975_st_05.jpg" /></li>
-                            <li><img src="img/imagini_slide/1975/bobmarley_1975_st_06.jpg" alt="bobmarley_1975_st_06" /></li>
-                            <li style="width:340px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_st_07.jpg" alt="bobmarley_1975_st_07.jpg" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_01.jpg" alt="bobmarley_1975_st_01" width="210" height="137" /></li>
+                            <li style="width:265px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_02.jpg" alt="bobmarley_1975_st_02.jpg" width="530" height="260" /></li>
+                            <li style="width:414px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_03.jpg" alt="bobmarley_1975_st_03.jpg" width="828" height="288" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_04.jpg" alt="bobmarley_1975_st_04" width="380" height="154" /></li>
+                            <li style="width:277px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_05.jpg" alt="bobmarley_1975_st_05.jpg" width="554" height="349" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_06.jpg" alt="bobmarley_1975_st_06" width="233" height="208" /></li>
+                            <li style="width:340px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_st_07.jpg" alt="bobmarley_1975_st_07.jpg" width="680" height="229" /></li>
 						</ul>
 						<ul class="imagini_dreapta">
-							<li><img src="img/imagini_slide/1975/bobmarley_1975_dr_01.jpg" alt="bobmarley_1975_dr_01" /></li>
-                            <li><img src="img/imagini_slide/1975/bobmarley_1975_dr_02.jpg" alt="bobmarley_1966_dr_02" /></li>
-                            <li><img src="img/imagini_slide/1975/bobmarley_1975_dr_03.jpg" alt="bobmarley_1966_dr_03" /></li>
-							<li style="width:311px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_dr_04.jpg" alt="bobmarley_1975_dr_04.jpg" /></li>
-							<li><img src="img/imagini_slide/1975/bobmarley_1975_dr_05.jpg" alt="bobmarley_1975_dr_05.jpg" /></li>
-                            <li style="width:293px;"><img class="imagine_link" src="img/imagini_slide/1975/bobmarley_1975_dr_06.jpg" alt="bobmarley_1975_dr_06.jpg" /></li>
-                            <li><img src="img/imagini_slide/1975/bobmarley_1975_dr_07.jpg" alt="bobmarley_1975_dr_07.jpg" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_01.jpg" alt="bobmarley_1975_dr_01" width="228" height="304" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_02.jpg" alt="bobmarley_1966_dr_02" width="312" height="217" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_03.jpg" alt="bobmarley_1966_dr_03" width="406" height="166" /></li>
+							<li style="width:311px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_04.jpg" alt="bobmarley_1975_dr_04.jpg" width="622" height="349" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_05.jpg" alt="bobmarley_1975_dr_05.jpg" width="272" height="185" /></li>
+                            <li style="width:293px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_06.jpg" alt="bobmarley_1975_dr_06.jpg" width="586" height="202" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1975/bobmarley_1975_dr_07.jpg" alt="bobmarley_1975_dr_07.jpg" width="329" height="151" /></li>
 						</ul>
 					</article>
 					<article id="obiecte_flotante_1975">
 						<div class="img_bob_0" data-type="element" data-offsetY="5100" data-speed="0.9">
 							<img src="img/imagini_slide/1975/obiecte_flotante/bobmarley_1975_obiect_01.png" alt="bobmarley_1975_obiect01" />
 						</div>
-						<div class="logo_sherif" data-type="element" data-offsetY="1800" data-speed="2.5">
+						<div class="logo_sherif" data-type="element" data-offsetY="1700" data-speed="2.5">
 							<img src="img/imagini_slide/1975/obiecte_flotante/bobmarley_1975_obiect_02.png" alt="bobmarley_1975_obiect02" />
 						</div>
 
-						<div class="logo_sherif_insigna" data-type="element" data-offsetY="2250" data-speed="2">
+						<div class="logo_sherif_insigna" data-type="element" data-offsetY="2150" data-speed="2">
 							<img src="img/imagini_slide/1975/obiecte_flotante/bobmarley_1975_obiect_03.png" alt="bobmarley_1975_obiect03" />
 						</div>
-						<div class="logo_this_is_love" data-type="element" data-offsetY="2500" data-speed="2">
+						<div class="logo_this_is_love" data-type="element" data-offsetY="2350" data-speed="2">
 							<img src="img/imagini_slide/1975/obiecte_flotante/bobmarley_1975_obiect_05.png" alt="bobmarley_1975_obiect05" />
 						</div>
 						<div class="disc1" data-type="element" data-offsetY="3000" data-speed="1.8">
@@ -268,28 +286,28 @@
 				<section id="fifth"  class="slide" data-slide="5" data-speed="8" data-type="background" data-offsetY="320">
                     <article id="imagini_1977" class="panou_imagini" data-type="element" data-offsetY="1040" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1977/bobmarley_1977_st_01.jpg" alt="bobmarley_1977_st_01" /></li>
-							<li style="width:296px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_st_02.jpg" alt="bobmarley_1977_st_02.jpg" /></li>
-                            <li style="width:376px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_st_03.jpg" alt="bobmarley_1977_st_03.jpg" /></li>
-                            <li><img src="img/imagini_slide/1977/bobmarley_1977_st_04.jpg" alt="bobmarley_1977_st_04" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_01.jpg" alt="bobmarley_1977_st_01" width="217" height="144" /></li>
+							<li style="width:296px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_02.jpg" alt="bobmarley_1977_st_02.jpg" width="592" height="241" /></li>
+                            <li style="width:376px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_03.jpg" alt="bobmarley_1977_st_03.jpg" width="752" height="216" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_04.jpg" alt="bobmarley_1977_st_04" width="215" height="149" /></li>
                             <li ><video width="480" height="200" controls>
- 							<source src="video/legend.mp4" type="video/mp4">
+ 							<source src="video/legend.mp4"  type="video/mp4">
 							<source src="video/legend.webm" type="video/webm">
 							Your browser does not support the video tag.
 							</video> </li>
-                            <li><img src="img/imagini_slide/1977/bobmarley_1977_st_06.jpg" alt="bobmarley_1977_st_06.jpg" /></li>
-                            <li style="width:375px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_st_07.jpg" alt="bobmarley_1977_st_07.jpg" /></li>
-                            <li style="width:219px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_st_08.jpg" alt="bobmarley_1977_st_08.jpg" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_05.jpg" alt="bobmarley_1977_st_05.jpg" width="313" height="144" /></li>
+                            <li style="width:375px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_06.jpg" alt="bobmarley_1977_st_07.jpg" width="750" height="360" /></li>
+                            <li style="width:219px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_st_07.jpg" alt="bobmarley_1977_st_08.jpg" width="438" height="229" /></li>
 						</ul>
 						<ul class="imagini_dreapta">
-							<li><img src="img/imagini_slide/1977/bobmarley_1977_dr_01.jpg" alt="bobmarley_1977_dr_01" /></li>
-							<li style="width:241px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_02.jpg" alt="bobmarley_1977_dr_02.jpg" /></li>
-                            <li style="width:437px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_03.jpg" alt="bobmarley_1977_dr_03.jpg" /></li>
-                            <li style="width:345px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_04.jpg" alt="bobmarley_1977_dr_04.jpg" /></li>
-                            <li style="width:230px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_05.jpg" alt="bobmarley_1977_dr_05.jpg" /></li>
-                            <li style="width:420px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_06.jpg" alt="bobmarley_1977_dr_06.jpg" /></li>
-							<li style="width:173px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_08.jpg" alt="bobmarley_1977_dr_08.jpg" /></li>
-                            <li style="width:265px;"><img class="imagine_link" src="img/imagini_slide/1977/bobmarley_1977_dr_07.jpg" alt="bobmarley_1977_dr_07.jpg" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_01.jpg" alt="bobmarley_1977_dr_01" width="196" height="160" /></li>
+							<li style="width:241px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_02.jpg" alt="bobmarley_1977_dr_02.jpg" width="482" height="250" /></li>
+                            <li style="width:437px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_03.jpg" alt="bobmarley_1977_dr_03.jpg" width="874" height="171" /></li>
+                            <li style="width:345px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_04.jpg" alt="bobmarley_1977_dr_04.jpg" width="690" height="239" /></li>
+                            <li style="width:230px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_05.jpg" alt="bobmarley_1977_dr_05.jpg" width="460" height="233" /></li>
+                            <li style="width:420px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_06.jpg" alt="bobmarley_1977_dr_06.jpg" width="840" height="233" /></li>
+							<li style="width:173px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_08.jpg" alt="bobmarley_1977_dr_08.jpg" width="346" height="216" /></li>
+                            <li style="width:265px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1977/bobmarley_1977_dr_07.jpg" alt="bobmarley_1977_dr_07.jpg" width="530" height="216" /></li>
   
 						</ul>
 					</article>
@@ -328,28 +346,28 @@
             	<section id="sixth" class="slide" data-slide="6" data-speed="8" data-type="background" data-offsetY="670">
                     <article id="imagini_1981" class="panou_imagini" data-type="element" data-offsetY="1350" data-speed="4">
 						<ul class="imagini_stanga">
-							<li><img src="img/imagini_slide/1981/bobmarley_1981_st_01.jpg" alt="bobmarley_1981_st_01" /></li>
-							<li style="width:312px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_st_02.jpg" alt="bobmarley_1981_st_02.jpg" /></li>
-                            <li style="width:219px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_st_03.jpg" alt="bobmarley_1981_st_03.jpg" /></li>
-                            <li style="width:296px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_st_05.jpg" alt="bobmarley_1981_st_05.jpg" /></li>
-                            <li><img src="img/imagini_slide/1981/bobmarley_1981_st_04.jpg" alt="bobmarley_1981_st_04" /></li>
-                            <li><img src="img/imagini_slide/1981/bobmarley_1981_st_06.jpg" alt="bobmarley_1981_st_06.jpg" /></li>
-                            <li style="width:367px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_st_07.jpg" alt="bobmarley_1981_st_07.jpg" /></li>
-                            <li><img src="img/imagini_slide/1981/bobmarley_1981_st_08.jpg" alt="bobmarley_1981_st_08.jpg" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_01.jpg" alt="bobmarley_1981_st_01" width="257" height="180" /></li>
+							<li style="width:312px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_02.jpg" alt="bobmarley_1981_st_02.jpg" width="624" height="190" /></li>
+                            <li style="width:219px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_03.jpg" alt="bobmarley_1981_st_03.jpg" width="438" height="274" /></li>
+                            <li style="width:296px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_05.jpg" alt="bobmarley_1981_st_05.jpg" width="592" height="297" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_04.jpg" alt="bobmarley_1981_st_04" width="463" height="169" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_06.jpg" alt="bobmarley_1981_st_06.jpg" width="284" height="177" /></li>
+                            <li style="width:367px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_07.jpg" alt="bobmarley_1981_st_07.jpg" width="734" height="252" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_st_08.jpg" alt="bobmarley_1981_st_08.jpg" width="287" height="159" /></li>
 						</ul>
 						<ul class="imagini_dreapta">
-							<li><img src="img/imagini_slide/1981/bobmarley_1981_dr_01.jpg" alt="bobmarley_1981_dr_01" /></li>
-							<li style="width:252px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_dr_02.jpg" alt="bobmarley_1981_dr_02.jpg" /></li>
-                            <li style="width:329px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_dr_03.jpg" alt="bobmarley_1981_dr_03.jpg" /></li>
-                            <li style="width:426px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_dr_04.jpg" alt="bobmarley_1981_dr_04.jpg" /></li>
-                            <li><img src="img/imagini_slide/1981/bobmarley_1981_dr_05.jpg" alt="bobmarley_1981_dr_05" /></li>
+							<li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_01.jpg" alt="bobmarley_1981_dr_01" width="220" height="131" /></li>
+							<li style="width:252px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_02.jpg" alt="bobmarley_1981_dr_02.jpg" width="504" height="343" /></li>
+                            <li style="width:329px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_03.jpg" alt="bobmarley_1981_dr_03.jpg" width="658" height="324" /></li>
+                            <li style="width:426px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_04.jpg" alt="bobmarley_1981_dr_04.jpg" width="852" height="241" /></li>
+                            <li><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_05.jpg" alt="bobmarley_1981_dr_05" width="248" height="225" /></li>
                             <li ><video width="380" height="220" controls>
  							<source src="video/interview.mp4" type="video/mp4">
 							<source src="video/interview.webm" type="video/webm">
 							Your browser does not support the video tag.
 							</video> </li>
-                            <li style="width:300px;"><img class="imagine_link" src="img/imagini_slide/1981/bobmarley_1981_dr_07.jpg" alt="bobmarley_1981_dr_07.jpg" /></li>
-                            <li style="margin-left:-47px;" ><img  id="sus" src="img/imagini_slide/1981/bobmarley_1981_final.png" width="106" height="143" alt="lois_logo"></li>
+                            <li style="width:300px;"><img class="imagine_link" src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_dr_06.jpg" alt="bobmarley_1981_dr_07.jpg" width="600" height="235" /></li>
+                            <li style="margin-left:-47px;" ><img src="img/ui/grey.gif" data-original="img/imagini_slide/1981/bobmarley_1981_final.png" width="106" height="143" alt="final_logo"/></li>
 						</ul>
 					</article>
 					<article id="obiecte_flotante_1981">
@@ -364,18 +382,17 @@
 						<div class="bob_0" data-type="element" data-offsetY="4800" data-speed="1.3">
 							<img src="img/imagini_slide/1981/obiecte_flotante/bobmarley_1981_obiect_01.png" alt="bobmarley_1981_obiect01" />
 						</div>
-						<div class="img_stanga" data-type="element" data-offsetY="4350" data-speed="2">
+						<div class="img_stanga" data-type="element" data-offsetY="4200" data-speed="2">
 							<img src="img/imagini_slide/1981/obiecte_flotante/bobmarley_1981_obiect_04.png" alt="bobmarley_1981_obiect04" />
 						</div>
 						<div class="img_dreapta" data-type="element" data-offsetY="3450" data-speed="3">
-							<img src="img/imagini_slide/1981/obiecte_flotante/bobmarley_1981_obiect_05.png" alt="bobmarley_1981_obiect05" />1
+							<img src="img/imagini_slide/1981/obiecte_flotante/bobmarley_1981_obiect_05.png" alt="bobmarley_1981_obiect05" />
 						</div>
 					</article>
 				</section>
             </article>
 <!-- Sfarsit slide 6 -->
 		</section>
-
-        
+  
 	</body>
 </html>
