@@ -1,0 +1,228 @@
+
+/***********************************************************************
+ * Sectiuni
+ **********************************************************************/
+ @font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body>section
+{
+	min-width:1024px;
+	position:fixed;
+	top:0px; /*dimensiune header*/
+	bottom:0px;  /*dimensiune footer-daca este cazul*/
+	left:0px;
+	right:0px;
+	display:block;
+	color:white;
+	overflow-x:hidden;
+}
+.hidden
+{
+	display:none !important;
+}
+.invisible
+{
+	visibility:hidden !important;
+}
+.ontop
+{
+	overflow:auto;
+	overflow-x:hidden;
+}
+.ontop>*
+{
+	position:relative;
+}
+#continut
+{
+	background-color:black;
+}
+#continut>article
+{
+	display:block;
+}
+
+/* ALINIERE TEXT ----------------------------------------------------------------------------------------- */
+body>section h1,h2
+{
+	font-family:'AbelRegular';
+	font-weight:normal;
+	color:white;
+}
+body>section h1
+{
+	font-size:40px;
+	margin-top:48px;
+	margin-left:70px; 
+	min-width:350px;
+	text-transform:uppercase;
+}
+/***********************************************************************
+ *     PANOURI IMAGINI
+ **********************************************************************/
+
+.panou_imagini
+{
+	width:1250px;
+	height:auto;
+	margin:auto;
+}
+.imagini_stanga{width:50%;height:auto;float:left;text-align:right;direction:rtl;display:block;}
+.imagini_stanga .imagine_link {	
+	-webkit-transition: all 0.9s ;
+	-moz-transition: all 0.9s ;
+	-ms-transition: all 0.9s ;
+	-o-transition: all 0.9s ;
+	transition: all 0.9s ;
+}
+
+.imagini_dreapta{width:auto;height:auto;float:left;text-align:left;margin-left:6px;}
+.imagini_dreapta .imagine_link {	
+	-webkit-transition: all 0.9s ;
+	-moz-transition: all 0.9s ;
+	-ms-transition: all 0.9s ;
+	-o-transition: all 0.9s ;
+	transition: all 0.9s ;
+}
+.imagini_stanga li, .imagini_dreapta li{margin-bottom:3px;overflow:hidden;}
+.imagini_stanga>li{direction:ltr;}
+.imagini_dreapta>li{direction:rtl;}
+.imagine_link{cursor:pointer;}
+/* ----------------------------------------------------- */
+
+/* ----- SLIDE-URI---------*/
+/* ANI */
+#continut>article>section
+{
+	z-index:0;
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+	max-width: 1920px;
+	min-width:1024px;
+	position: relative;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	-o-box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.8);
+	overflow:hidden;
+}
+
+/* ANUL 1945 */
+#first
+{
+	background: url(../img/imagini_slide/1945/fundal.jpg) 50% 0 no-repeat fixed;
+	height: 1620px;
+	position:relative;
+}
+
+#first .logo_suprem { height: 140px; width: 808px; max-width: 1920px; position: absolute; z-index:4; top:290px;left:50%; margin-left:-365px;}
+#first .img_dreapta_color { height: 188px; width: 267px; max-width: 1920px; position: absolute;z-index:3; top:230px;right:50%;margin-right:-500px;}
+#first .img_stanga{ height: 148px;width: 212px; max-width: 1920px; position: absolute;z-index:6; top:390px;left:50%;margin-left:-430px;}
+#first .jamaica{ height: 146px;width: 631px; max-width: 1920px; position: absolute;z-index:4; top:890px;left:50%;margin-left:-260px;}
+#first .rasta_lion{ height: 328px;width: 276px; max-width: 1920px; position: absolute;z-index:5; top:1140px;left:50%;margin-left:-100px;}
+#first .img_dreapta_chitara{ height: 261px;width: 216px; max-width: 1920px; position: absolute;z-index:6; top:1290px;right:50%;margin-right:-485px;}
+#first .img_stanga_2{ height: 169px;width: 244px; max-width: 1920px; position: absolute;z-index:3; top:1390px;left:50%;margin-left:-525px;}
+#first>article { width: 100%; top: 5px; position: absolute; z-index:2;}
+#first>article p,
+#first>article a { color: #ccc; }
+#first>article a { text-decoration: underline; }
+#first>article a:hover { color: #fff; }
+/* ----------------------------------------------------- */
+
+/* ANUL 1957 */
+#second .trenchtown { height: 360px; width: 360px; max-width: 1920px; position: absolute; z-index:4; top:700px;left:50%; margin-left:+100px;}
+#second .img_bob_chitara_0 { height: 1647px; width: 892px; max-width: 1920px; position: absolute;z-index:5; top:1400px;right:-405px;}
+#second .img_bob_chitara_01 { height: 1647px; width: 892px; max-width: 1920px; position: absolute;z-index:5; top:2318px;right:-171px;}
+#second .img_stanga{ height: 165px;width: 226px; max-width: 1920px; position: absolute;z-index:5; top:1500px;left:50%;margin-left:-520px;}
+#second .img_dreapta{ height: 192px;width: 238px; max-width: 1920px; position: absolute;z-index:4; top:2100px;left:50%;margin-left:-10px;}
+#second .insigna_1{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1350px;left:50%;margin-left:-350px;}
+#second .insigna_2{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1450px;left:50%;margin-left:-400px;}
+#second .insigna_3{ height: 154px;width: 154px; max-width: 1920px; position: absolute;z-index:2; top:1390px;right:50%;margin-right:-77px;}
+#second
+{
+	background: url(../img/imagini_slide/1957/fundal.jpg) 50% 200px no-repeat fixed;
+	height: 1100px;
+	z-index:5;
+	position:relative;
+}
+#second>article { width: 100%;position:absolute;;z-index:0;}
+/* ----------------------------------------------------- */
+
+/* ANUL 1966 */
+#third .onelove { height: 222px; width: 700px; max-width: 1920px; position: absolute; z-index:4; top:1300px;left:50%; margin-left:-380px;}
+#third .bob_0 { height:1450px; width: 782px; max-width: 1920px; position: absolute;z-index:5; top:1220px;right:-220px;}
+#third .img_stanga{ height: 267px;width: 340px; max-width: 1920px; position: absolute;z-index:6; top:3300px;left:50%;margin-left:-500px;}
+#third .rasta{ height: 185px;width: 265px; max-width: 1920px; position: absolute;z-index:4; top:1900px;left:50%;margin-left:80px;}
+#third .img_dreapta{ height: 353px;width: 100px; max-width: 1920px; position: absolute;z-index:4; top:2100px;left:50%;margin-left:-450px;}
+#third
+{
+	background: url(../img/imagini_slide/1966/fundal.jpg) 50% 100px no-repeat fixed;
+	height: 1120px;
+	position:relative;
+}
+#third>article {width: 100%;position:absolute;top:20px;z-index:0;}
+#third .photograph { background: url(../images/photo.png) transparent 40% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+/* ----------------------------------------------------- */
+
+/* ANUL 1975 */
+#fourth .logo_sherif { height: 98px; width: 389px; max-width: 1920px; position: absolute; z-index:2; top:1800px;left:50%; margin-left:-190px;}
+#fourth .img_bob_0 { height: 1146px; width: 815px; max-width: 1920px; position: absolute;z-index:5; top:4500px;right:-300px;}
+#fourth .logo_sherif_insigna{ height: 135px;width: 193px; max-width: 1920px; position: absolute;z-index:3; top:2250px;left:50%;margin-left:150px;}
+#fourth .logo_this_is_love{ height: 200px;width: 179px; max-width: 1920px; position: absolute;z-index:2; top:2500px;left:50%;margin-left:-87px;}
+#fourth .disc1{ height: 117px;width: 177px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-400px;}
+#fourth .disc2{ height: 161px;width: 191px; max-width: 1920px; position: absolute;z-index:2; top:2300px;left:50%;margin-left:200px;}
+#fourth
+{
+	background: url(../img/imagini_slide/1975/fundal.jpg) 50% 0px no-repeat fixed;
+	height: 1130px;
+	z-index:1;
+	position:relative;
+}
+#fourth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */
+
+/* ANUL 1977 */
+#fifth .logo_bmw { height: 216px; width: 432px; max-width: 1920px; position: absolute; z-index:2; top:1800px;left:50%;margin-left:-182px;}
+#fifth .exodus { height: 207px; width: 604px; max-width: 1920px; position: absolute;z-index:3; top:3400px;left:50%;margin-left:-55px;}
+#fifth .frunza_1 { height: 205px;width: 203px; max-width: 1920px; position: absolute;z-index:2; top:2150px;left:50%;margin-left:150px;}
+#fifth .logo_bob_cerc { height: 169px;width: 168px; max-width: 1920px; position: absolute;z-index:2; top:2100px;left:50%;margin-left:300px;}
+#fifth .frunza_2 { height: 141px;width: 141px; max-width: 1920px; position: absolute;z-index:4; top:2300px;left:50%;margin-left:370px;}
+#fifth .iron_lion_zion{ height: 143px;width: 332px; max-width: 1920px; position: absolute;z-index:2; top:3100px;left:50%;margin-left:-250px;}
+#fifth .chitara { height: 404px;width: 660px; max-width: 1920px; position: absolute;z-index:4; top:6100px;left:50%;margin-left:-115px;}
+#fifth .legend_album { height: 288px;width: 288px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-500px;}
+#fifth
+{
+	background: url(../img/imagini_slide/1977/fundal.jpg) 50% -200px no-repeat fixed;
+	height: 1200px;
+	position:relative;
+}
+#fifth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */
+
+/* ANUL 1981 */
+#sixth .logo_GUSU { height: 138px; width: 283px; max-width: 1920px; position: absolute; z-index:2; top:2050px;left:50%;margin-left:-400px;}
+#sixth .minge {height: 1242px; width: 525px; max-width: 1920px; position: absolute;z-index:3; top:8000px;right:-150px;}
+#sixth .bob_0 { height: 1242px; width: 525px; max-width: 1920px; position: absolute;z-index:3; top:4800px;right:-100px;}
+#sixth .img_stanga { height: 226px;width: 286px; max-width: 1920px; position: absolute;z-index:2; top:4350px;left:50%;margin-left:-495px;}
+#sixth .img_dreapta { height: 198px;width: 267px; max-width: 1920px; position: absolute;z-index:2; top:3450px;left:50%;margin-left:210px;}
+#sixth
+{
+	background: url(../img/imagini_slide/1981/fundal.jpg) 50% 0px no-repeat fixed;
+	height: 1520px;
+	position:relative;
+}
+#sixth>article {width: 100%;position:absolute;top:0px;z-index:0;}
+/* ----------------------------------------------------- */

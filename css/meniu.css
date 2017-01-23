@@ -1,0 +1,172 @@
+ /*
+	Autor: Alex Imbrea
+
+	Setarile principale pentru font, preloader, meniu navigare si bara de derulare 
+ */
+ @font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html
+{
+	background-color:#000000;
+	display:inline-block;
+	height:100%;
+	max-height:100%;
+    overflow:hidden;
+}
+body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:100%;
+	width:100%;
+}
+
+ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style:none;
+}
+
+
+/***********************************************************************
+ * PRELOADER
+ **********************************************************************/
+ #qLoverlay
+{
+	width: 100%;
+    height: 100%;
+	background-color: black;
+	background-position: fixed;
+	background-image: url("../img/ui/load.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	z-index: 9999999999;
+	top: 0;
+	left: 0;
+}
+
+/***********************************************************************
+ *     MENIU NAVIGARE
+ **********************************************************************/
+/* MENIU ANI (animat css3-webkit-) ************************************/
+
+*#ani_nav{
+	/*color:white;*/
+	position:fixed;
+	z-index:7;
+	left:0px;
+	top:50px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+}
+
+#ani_nav .selectat
+{
+	font-size:60px;
+	width:140px;
+	color: white;
+	border-bottom:2px solid white;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100); 
+	-moz-opacity:1.0; 
+	-khtml-opacity: 1.0; 
+	opacity: 1.0; 
+}
+#ani_nav li
+{
+	list-style:none;
+	width:80px;
+	font-family:'BebasRegular';
+	text-align:center;
+	cursor:pointer;
+	font-size:20px;
+	/*background: url(../img/ui/bilet.png);*/
+	color:#AAAAAA;
+	border-bottom:1px solid #000000;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60); 
+	-moz-opacity:0.6; 
+	-khtml-opacity: 0.6; 
+	opacity: 0.6;  
+	
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+#ani_nav li:hover:not(.selectat)
+{
+	font-size:60px;
+	width:140px;
+	color:#CCCCCC;
+	border-bottom:2px solid #CCCCCC;
+	
+	/* ease-in */
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+#ani_nav a
+{
+	color:inherit;
+	padding-bottom:6px;
+	padding-top:8px;
+	display:block;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+}
+
+
+/***********************************************************************
+ *     ############# BARA DERULARE CUSTOM ###########
+ **********************************************************************/
+
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+
+    background: rgb(255, 247, 150);
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	   -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgb(255, 83, 68);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgb(255, 100, 100);
+}
