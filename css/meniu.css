@@ -1,7 +1,7 @@
  /*
 	Autor: Alex Imbrea
 
-	Setarile principale pentru font, preloader, meniu navigare si bara de derulare 
+	Setarile principale pentru font, pre-loader, meniu navigare si bara de derulare 
  */
  @font-face {
     font-family: 'BebasRegular';
@@ -20,17 +20,17 @@ html
 	display:inline-block;
 	height:100%;
 	max-height:100%;
-    overflow:hidden;
+    overflow: auto;
 }
 body {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 20px;
-    right: 20px;
-    padding: 30px; 
-    overflow-y: scroll;
-    overflow-x: hidden;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px; 
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
     height:100%;
 	width:100%;
 }
@@ -41,7 +41,6 @@ ul
 	margin: 0px;
 	list-style:none;
 }
-
 
 /***********************************************************************
  * PRELOADER
@@ -55,7 +54,6 @@ ul
 	background-image: url("../img/ui/load.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	position: fixed;
 	z-index: 9999999999;
 	top: 0;
 	left: 0;
@@ -82,7 +80,7 @@ ul
 
 #ani_nav .selectat
 {
-	font-size:60px;
+	font-size:4em;
 	width:140px;
 	color: white;
 	border-bottom:2px solid white;
@@ -99,7 +97,7 @@ ul
 	font-family:'BebasRegular';
 	text-align:center;
 	cursor:pointer;
-	font-size:20px;
+	font-size:1.8em;
 	/*background: url(../img/ui/bilet.png);*/
 	color:#AAAAAA;
 	border-bottom:1px solid #000000;
@@ -117,7 +115,7 @@ ul
 }
 #ani_nav li:hover:not(.selectat)
 {
-	font-size:60px;
+	font-size:4em;
 	width:140px;
 	color:#CCCCCC;
 	border-bottom:2px solid #CCCCCC;
@@ -148,20 +146,19 @@ ul
 /***********************************************************************
  *     ############# BARA DERULARE CUSTOM ###########
  **********************************************************************/
-
 ::-webkit-scrollbar {
     width: 12px;
 
 }
  
-/* Track */
+
 ::-webkit-scrollbar-track {
 
     background: rgb(255, 247, 150);
 
 }
  
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 	   -webkit-border-radius: 2px;
     border-radius: 2px;

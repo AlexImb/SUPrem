@@ -1,6 +1,6 @@
 /*
 Autor: Alex Imbrea
-Setari pentru loader
+Setari pentru pre=loader-este folosit pentru imaginile de pe slide-ul 1 si obiectele flotante
 */
 $(document).ready(function (e) {
 	 $("body").queryLoader2({

@@ -1,4 +1,8 @@
+/*
+Autor: Alex Imbrea
 
+Setarile pentru  font, panouri, imagini si slide-uri
+*/
 /***********************************************************************
  * Sectiuni
  **********************************************************************/
@@ -24,7 +28,8 @@ body>section
 	right:0px;
 	display:block;
 	color:white;
-	overflow-x:hidden;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .hidden
 {
@@ -129,8 +134,8 @@ body>section h1
 }
 
 #first .logo_suprem { height: 140px; width: 808px; max-width: 1920px; position: absolute; z-index:4; top:290px;left:50%; margin-left:-365px;}
-#first .img_dreapta_color { height: 188px; width: 267px; max-width: 1920px; position: absolute;z-index:3; top:230px;right:50%;margin-right:-500px;}
-#first .img_stanga{ height: 148px;width: 212px; max-width: 1920px; position: absolute;z-index:6; top:390px;left:50%;margin-left:-430px;}
+#first .img_dreapta { height: 188px; width: 267px; max-width: 1920px; position: absolute;z-index:6; top:380px;right:50%;margin-right:-500px;}
+#first .img_stanga_color{ height: 148px;width: 212px; max-width: 1920px; position: absolute;z-index:3; top:250px;left:50%;margin-left:-430px;}
 #first .jamaica{ height: 146px;width: 631px; max-width: 1920px; position: absolute;z-index:4; top:890px;left:50%;margin-left:-260px;}
 #first .rasta_lion{ height: 328px;width: 276px; max-width: 1920px; position: absolute;z-index:5; top:1140px;left:50%;margin-left:-100px;}
 #first .img_dreapta_chitara{ height: 261px;width: 216px; max-width: 1920px; position: absolute;z-index:6; top:1290px;right:50%;margin-right:-485px;}
@@ -146,7 +151,7 @@ body>section h1
 #second .trenchtown { height: 360px; width: 360px; max-width: 1920px; position: absolute; z-index:4; top:700px;left:50%; margin-left:+100px;}
 #second .img_bob_chitara_0 { height: 1647px; width: 892px; max-width: 1920px; position: absolute;z-index:5; top:1400px;right:-405px;}
 #second .img_bob_chitara_01 { height: 1647px; width: 892px; max-width: 1920px; position: absolute;z-index:5; top:2318px;right:-171px;}
-#second .img_stanga{ height: 165px;width: 226px; max-width: 1920px; position: absolute;z-index:5; top:1500px;left:50%;margin-left:-520px;}
+#second .img_stanga{ height: 250px;width: 315px; max-width: 1920px; position: absolute;z-index:5; top:1500px;left:50%;margin-left:-550px;}
 #second .img_dreapta{ height: 192px;width: 238px; max-width: 1920px; position: absolute;z-index:4; top:2100px;left:50%;margin-left:-10px;}
 #second .insigna_1{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1350px;left:50%;margin-left:-350px;}
 #second .insigna_2{ height: 112px;width: 112px; max-width: 1920px; position: absolute;z-index:2; top:1450px;left:50%;margin-left:-400px;}
@@ -178,10 +183,10 @@ body>section h1
 /* ----------------------------------------------------- */
 
 /* ANUL 1975 */
-#fourth .logo_sherif { height: 98px; width: 389px; max-width: 1920px; position: absolute; z-index:2; top:1800px;left:50%; margin-left:-190px;}
 #fourth .img_bob_0 { height: 1146px; width: 815px; max-width: 1920px; position: absolute;z-index:5; top:4500px;right:-300px;}
-#fourth .logo_sherif_insigna{ height: 135px;width: 193px; max-width: 1920px; position: absolute;z-index:3; top:2250px;left:50%;margin-left:150px;}
-#fourth .logo_this_is_love{ height: 200px;width: 179px; max-width: 1920px; position: absolute;z-index:2; top:2500px;left:50%;margin-left:-87px;}
+#fourth .logo_sherif { height: 98px; width: 389px; max-width: 1920px; position: absolute; z-index:2; top:1700px;left:50%; margin-left:-190px;}
+#fourth .logo_sherif_insigna{ height: 135px;width: 193px; max-width: 1920px; position: absolute;z-index:3; top:2150px;left:50%;margin-left:150px;}
+#fourth .logo_this_is_love{ height: 200px;width: 179px; max-width: 1920px; position: absolute;z-index:2; top:2350px;left:50%;margin-left:-110px;}
 #fourth .disc1{ height: 117px;width: 177px; max-width: 1920px; position: absolute;z-index:2; top:3000px;left:50%;margin-left:-400px;}
 #fourth .disc2{ height: 161px;width: 191px; max-width: 1920px; position: absolute;z-index:2; top:2300px;left:50%;margin-left:200px;}
 #fourth
@@ -214,9 +219,9 @@ body>section h1
 
 /* ANUL 1981 */
 #sixth .logo_GUSU { height: 138px; width: 283px; max-width: 1920px; position: absolute; z-index:2; top:2050px;left:50%;margin-left:-400px;}
-#sixth .minge {height: 1242px; width: 525px; max-width: 1920px; position: absolute;z-index:3; top:8000px;right:-150px;}
+#sixth .minge {height: 159px; width:159px; max-width: 1920px; position: absolute;z-index:3; top:8000px;right:255px;}
 #sixth .bob_0 { height: 1242px; width: 525px; max-width: 1920px; position: absolute;z-index:3; top:4800px;right:-100px;}
-#sixth .img_stanga { height: 226px;width: 286px; max-width: 1920px; position: absolute;z-index:2; top:4350px;left:50%;margin-left:-495px;}
+#sixth .img_stanga { height: 226px;width: 286px; max-width: 1920px; position: absolute;z-index:2; top:4200px;left:50%;margin-left:-495px;}
 #sixth .img_dreapta { height: 198px;width: 267px; max-width: 1920px; position: absolute;z-index:2; top:3450px;left:50%;margin-left:210px;}
 #sixth
 {
