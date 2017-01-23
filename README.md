@@ -6,6 +6,9 @@ This project was my first CSS3/HTML5 project used as an entry in the InfoEducati
 
 One of the main features of this website is Parallax style used by implementing a lot of functions for determining the position of objects, computing offsets of the objects etc.
 
-## Features:
+## Features*:
  - Parallax
  -
+
+
+* dsadsad
