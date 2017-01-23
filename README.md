@@ -6,9 +6,15 @@ This project was my first CSS3/HTML5 project used as an entry in the InfoEducati
 
 One of the main features of this website is Parallax style used by implementing a lot of functions for determining the position of objects, computing offsets of the objects etc.
 
-## Features*:
+An important note is that the "features" and "new technologies" used here are not that new anymore. Nowadays, a lot of website use parallax, lazy loading, etc.
+
+## Features :
  - Parallax
- -
+ - JS Prealoader for the landing page
+ - Lazy loading for the rest of the page
+ - Responsive - kind of
+ - Well documented code and easy to extend
+ - Custom scroll bar
+ - Compatibility adaptations for mobile browsers
 
-
-* dsadsad
+ 
